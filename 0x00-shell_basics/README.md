@@ -1,2 +1,1 @@
-p
-This is exo
+This is project shell basics
