@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown -RP betty *
+sudo chown -RP betty:holberton *
