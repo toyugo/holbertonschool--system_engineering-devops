@@ -8,8 +8,11 @@ eniac
 Eniac was Turing-complete, and able to solve "a large class of numerical problems" through reprograming.
 .SH OPTIONS
 eniac does not take any options.
-.SH SEE ALSO
-.SH BUGS
+.SH SEE
+.PP
+SEE ALSO
+BUGS
 No known bugs.
 .SH AUTHOR
 University of Pennsylvania.
+.PP
