@@ -1,0 +1,2 @@
+#!/bin/bash
+cat -n | tr -d ' '| tr '\t' '!' | grep [13579]! | cut -d '!' -f 2 
