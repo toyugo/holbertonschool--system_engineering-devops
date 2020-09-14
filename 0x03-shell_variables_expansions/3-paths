@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | tr -s ":" | grep -o ":" |(wc -l)
+echo "$PATH" | tr -s ":" | grep -o ":" |echo $(($(wc -l)+1))
