@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script
+
+for f in $(ls)
+do
+    echo $f | cut -d '-' -f2
+done
