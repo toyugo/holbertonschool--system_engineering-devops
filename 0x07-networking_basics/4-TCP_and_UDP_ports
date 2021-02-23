@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Display tcp udp active
 
 netstat -lp
