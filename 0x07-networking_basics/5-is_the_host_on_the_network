@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-
-netstat -lp
+ping -c 5 $1
