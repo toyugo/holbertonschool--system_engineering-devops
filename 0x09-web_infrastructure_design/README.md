@@ -1,5 +1,3 @@
-README
-
 Ex 0
 
 ![Exo 0](https://github.com/toyugo/holberton-system_engineering-devops/blob/master/0x09-web_infrastructure_design/images/0-simple_web_stack.png)
