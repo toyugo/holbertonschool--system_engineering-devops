@@ -1,6 +1,7 @@
 # puppet manifest
 file {'Update index':
-    ensure 	=> present,
+    ensure 	=> file,
     path	=> '/var/www/html/index.html',
     content     => 'Holberton School\n',
 }
+
