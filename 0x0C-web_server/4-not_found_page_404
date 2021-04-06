@@ -4,10 +4,7 @@ sudo apt-get update -y
 sudo apt-get install -y nginx
 sudo echo 'Holberton School for the win!' > /var/www/html/index.nginx-debian.html
 sudo sed -i  s/"\# pass".*/"location \/redirect_me \{\n\t\treturn 301 https\:\/\/www.youtube.com\/watch?v=nQAdYNB8nXU\;\n\t\}"/ /etc/nginx/sites-enabled/default
-#Add a 404 file
 sudo touch /var/www/html/404.html
-#sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
-#sudo sed -i s/"\# include snip".*/"error_page 404 \/404.html;\n\tlocation  \/404.html \{\n\t\tinternal\;\n\t\}"/ /etc/nginx/sites-enabled/default
-sudo echo "Ceci n'est pas une page" > /var/www/html/my404.html
-sudo sed -i 's/listen 80 default_server;/listen 80 default_server;\n  error_page 404 \/my404.html;\n  rewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;/' /etc/nginx/sites-available/default
+sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
+sudo sed -i s/"\# include snip".*/"error_page 404 \/404.html;\n\tlocation  \/404.html \{\n\t\tinternal\;\n\t\}"/ /etc/nginx/sites-enabled/default
 sudo service nginx restart
