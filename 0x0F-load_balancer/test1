@@ -1,0 +1,19 @@
+global
+	log 127.0.0.1 local0 notice
+	maxconn 150
+	user haproxy
+	group haproxy
+defaults
+	log     global
+	mode    http
+	option  httplog
+	retries 3
+	option redispatch
+	timeout connect  5000
+	timeout client  10000
+	timeout server  10000
+listen myserv
+	bind 0.0.0.0:80
+	balance roundrobin
+	server 03-web-01 35.231.210.244:80 check
+	server 03-web-02 34.73.245.217:80 check
