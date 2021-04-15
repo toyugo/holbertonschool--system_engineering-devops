@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# dig domain name and parse informations
+
+ls=('www' 'lb-01' 'web-01' 'web-02')
+url='toola.tech'
+
+if [ $# -eq 2 ]
+then
+    fullurl=$2.$1
+    d=$(dig $fullurl | grep -A1 'ANSWER SECTION:' | tail -1| awk '{print $1}' | cut -d '.' -f 1)
+    r=$(dig $fullurl | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
+    d=$(dig $fullurl | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+    echo "The subdomain $2 is a $r record and points to $d"
+else
+    for i in "${ls[@]}"
+    do
+        fullurl=$i.$url
+        d=$(dig $fullurl | grep -A1 'ANSWER SECTION:' | tail -1| awk '{print $1}' | cut -d '.' -f 1)
+        r=$(dig $fullurl | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
+        d=$(dig $fullurl | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+        echo "The subdomain $i is a $r record and points to $d" 
+    done
+fi
