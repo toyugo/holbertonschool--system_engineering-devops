@@ -4,4 +4,3 @@ echo 'user nginx;' >> /etc/nginx/nginx.conf
 chown nginx /etc/nginx/nginx.conf
 chmod u+r /etc/nginx/nginx.conf
 sudo -u nginx service nginx restart
-
