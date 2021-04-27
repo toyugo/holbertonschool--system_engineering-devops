@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# set default nginx user
+echo 'user nginx;' >> /etc/nginx/nginx.conf
+service nginx restart
