@@ -40,7 +40,7 @@ if __name__ == '__main__':
     title_all = []
 
     with open("{}.csv".format(user_id), mode='w') as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         for task in data_task:
             writer.writerow([user_id, user_name, task.get("completed"),
                              task.get("title")])
