@@ -6,17 +6,17 @@ import sys
 import urllib
 
 
-def getDeserialisedJson(url):
+def getDeserialisedJson(inputUrl):
     """
-        From an url which return serialised jsonFile request
-        return the deserialised Json
+        inputUrl: url which return a json formated string
+        return: the deserialised Json
     """
-    response = requests.get(url).content.decode('UTF-8')
-    # or return (requests.get(url).content.decode('UTF-8').json())
+    response = requests.get(input).content.decode('UTF-8')
+    # or return (requests.get(input).content.decode('UTF-8').json())
     try:
         obj = json.loads(response)
     except valueError:
-        return ('url do not return a json')
+        return ('input is not a json')
     return (obj)
 
 if __name__ == '__main__':
