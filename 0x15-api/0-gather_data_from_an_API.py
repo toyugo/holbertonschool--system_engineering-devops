@@ -11,7 +11,7 @@ def get_deserialised_json(inputurl):
         inputurl: url which return a json formated string
         return: the deserialised Json
     """
-    response = requests.get(input).content.decode('UTF-8')
+    response = requests.get(inputurl).content.decode('UTF-8')
     # or return (requests.get(input).content.decode('UTF-8').json())
     try:
         obj = json.loads(response)
@@ -35,13 +35,13 @@ if __name__ == '__main__':
     employee_name = data_employee.get('name')
     task_counter = 0
     complete_counter = 0
-    title_all = []
+    title_all = ""
 
     for task in data_task:
         task_counter += 1
         if task.get('completed'):
             complete_counter += 1
-            title_all += task.get('title')
+            title_all += "\t%s\n" % task.get('title')
     total_task = task_counter
 
     print("Employee %s is done with \
