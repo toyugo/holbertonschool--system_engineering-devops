@@ -6,9 +6,9 @@ import sys
 import urllib
 
 
-def getDeserialisedJson(inputUrl):
+def get_deserialised_json(inputurl):
     """
-        inputUrl: url which return a json formated string
+        inputurl: url which return a json formated string
         return: the deserialised Json
     """
     response = requests.get(input).content.decode('UTF-8')
@@ -24,26 +24,26 @@ if __name__ == '__main__':
         Script which get data from a jsonplaceholder api
         and print a formated string.
     """
-    employeeId = sys.argv[1]
-    Url = 'https://jsonplaceholder.typicode.com'
-    urlEmployee = '{}/users/{}'.format(Url, employeeId)
-    urlTask = '{}/users/{}/todos'.format(Url, employeeId)
+    user_id = sys.argv[1]
+    url = 'https://jsonplaceholder.typicode.com'
+    url_employee = '{}/users/{}'.format(url, user_id)
+    url_task = '{}/users/{}/todos'.format(url, user_id)
 
-    dataEmployee = getDeserialisedJson(urlEmployee)
-    dataTask = getDeserialisedJson(urlTask)
+    data_employee = get_deserialised_json(url_employee)
+    data_task = get_deserialised_json(url_task)
 
-    employeeName = dataEmployee.get('name')
-    taskCounter = 0
-    completeCounter = 0
-    titleAll = ""
+    employee_name = data_employee.get('name')
+    task_counter = 0
+    complete_counter = 0
+    title_all = []
 
-    for task in dataTask:
-        taskCounter += 1
+    for task in data_task:
+        task_counter += 1
         if task.get('completed'):
-            completeCounter += 1
-            titleAll += '\t %s\n' % task.get('title')
-    totalTask = taskCounter
+            complete_counter += 1
+            title_all += task.get('title')
+    total_task = task_counter
 
     print("Employee %s is done with \
-tasks(%s/%s):" % (employeeName, completeCounter, totalTask))
-    print("%s" % titleAll, end='')
+tasks(%s/%s):" % (employee_name, complete_counter, total_task))
+    print("%s" % title_all, end='')
