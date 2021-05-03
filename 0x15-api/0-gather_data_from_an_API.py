@@ -13,7 +13,6 @@ def getDeserialisedJson(url):
     """
     response = requests.get(url).content.decode('UTF-8')
     # or return (requests.get(url).content.decode('UTF-8').json())
-    user = requests.get("https://jsonplaceholder.typicode.com/users/2")
     try:
         obj = json.loads(response)
     except valueError:
@@ -21,6 +20,10 @@ def getDeserialisedJson(url):
     return (obj)
 
 if __name__ == '__main__':
+    """
+        Script which get data from a jsonplaceholder api
+        and print a formated string.
+    """
     employeeId = sys.argv[1]
     Url = 'https://jsonplaceholder.typicode.com'
     urlEmployee = '{}/users/{}'.format(Url, employeeId)
