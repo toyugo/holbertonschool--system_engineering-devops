@@ -30,9 +30,9 @@ if __name__ == '__main__':
     data_user = get_deserialised_json(url_user)
     obj = {}
     for user in data_user:
-        data_todo = "https://jsonplaceholder.typicode.com/users/{}/todos"\
-              .format(user['id'])
-        request = requests.get(data_todo).json()
+        data_todo = "{}/users/{}/todos"\
+              .format(url, user['id'])
+        request = get_deserialised_json(data_todo)
         list_tasks = []
         for content in request:
             obj_task = {}
