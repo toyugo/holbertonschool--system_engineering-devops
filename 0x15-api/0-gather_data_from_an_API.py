@@ -22,19 +22,18 @@ def getDeserialisedJson(url):
 
 if __name__ == '__main__':
     employeeId = sys.argv[1]
-    mainUrl = 'https://jsonplaceholder.typicode.com'
-    urlEmployee = '{}/users/{}'.format(mainUrl, employeeId)
-    urlTask = '{}/users/{}/todos'.format(mainUrl, employeeId)
+    Url = 'https://jsonplaceholder.typicode.com'
+    urlEmployee = '{}/users/{}'.format(Url, employeeId)
+    urlTask = '{}/users/{}/todos'.format(Url, employeeId)
 
     dataEmployee = getDeserialisedJson(urlEmployee)
     dataTask = getDeserialisedJson(urlTask)
 
     employeeName = dataEmployee.get('name')
-    employeeTotalTask = dataTask
     taskCounter = 0
     completeCounter = 0
     titleAll = ""
-    
+
     for task in dataTask:
         taskCounter += 1
         if task.get('completed'):
