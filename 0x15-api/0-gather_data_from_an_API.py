@@ -41,7 +41,7 @@ if __name__ == '__main__':
         task_counter += 1
         if task.get('completed'):
             complete_counter += 1
-            title_all += "\t%s\n" % task.get('title')
+            title_all += "\t %s\n" % task.get('title')
     total_task = task_counter
 
     print("Employee %s is done with \
