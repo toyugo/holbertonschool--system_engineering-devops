@@ -14,10 +14,12 @@
 
 # ROOT CAUSE AND RESOLUTION
     - CAUSES
-                The issue was caused by a bad configuration made by a new employee on the firewall for getting answer on port all port.
+                The issue was caused by a bad configuration made by a new employee 
+                on the firewall for getting answer on port all port.
     
     - RESOLUTION
-                Restablishment the correct configuration. To do it, follow the process on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
+                Restablishment the correct configuration. To do it, follow the process
+                 on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
 # CORRECTIVE AND PREVENTIVE ISSUE
     * Improve the formation of new employee with <CP05FORM-BaseFireWall>
     * Do not give full right on system without this formation
