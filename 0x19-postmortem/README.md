@@ -19,7 +19,7 @@
         Restablishment of config <conf-02>.  
             To do it follow document </FireWall/ConfigurePort_V5.doc> which contain all needed open port.  
 # CORRECTIVE AND PREVENTIVE ISSUE
-    * Improve the formation of new employee with <CP05FORM-BaseFireWall>
-    * Do not give full right on system without this formation
+    * Improve the formation of new employee with formation : <CP05FORM-BaseFireWall>.
+    * Do not give full right on system without this formation.
     * Add warning message before validating change on the firewall.
 
