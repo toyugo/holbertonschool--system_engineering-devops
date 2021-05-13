@@ -13,13 +13,13 @@
                 11h30  :   <TEAN-OF1> Web site available, incident close
 
 # ROOT CAUSE AND RESOLUTION
-    CAUSES
-    The issue was caused by a bad configuration made by a new employee on the firewall for getting answer on port all port.
+    - CAUSES
+                The issue was caused by a bad configuration made by a new employee on the firewall for getting answer on port all port.
     
-    RESOLUTION
-    Restablishment the correct configuration. To do it, follow the process on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
+    - RESOLUTION
+                Restablishment the correct configuration. To do it, follow the process on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
 # CORRECTIVE AND PREVENTIVE ISSUE
-    Improve the formation of new employee with <CP05FORM-BaseFireWall>
-    Do not give full right on system without this formation
-    Add warning message before validating change on the firewall.
+    * Improve the formation of new employee with <CP05FORM-BaseFireWall>
+    * Do not give full right on system without this formation
+    * Add warning message before validating change on the firewall.
 
