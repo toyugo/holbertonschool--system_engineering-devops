@@ -12,11 +12,11 @@
                 11h25 :  <PROX-102> Our new employee closed all port, full check up on port and restablishement of the  communication
                 11h30  :   <TEAN-OF1> Web site available, incident close
 
-# ROOT CAUSE AND RESOLUTION 
-    To solve it we checked if there was no physical problem on our server infrastructure. 
-    Then we checked all port and we figure that the firewall was blocking the request.
-    The PROX-102 new employee made a mistake and close all port. The resolution was to restablish the correct configuration. To do it, follow the process on </FireWall/ConfigurePort_V5.doc>
-
+# ROOT CAUSE AND RESOLUTION
+    Cause :
+    The issue was caused by a bad configuration made by a new employee on the firewall for getting answer on port all port.
+    Resolution:
+    Restablishment the correct configuration. To do it, follow the process on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
 # CORRECTIVE AND PREVENTIVE ISSUE
     Improve the formation of new employee with <CP05FORM-BaseFireWall>
     Do not give full right on system without this formation
