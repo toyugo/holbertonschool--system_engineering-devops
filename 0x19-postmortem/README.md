@@ -6,7 +6,8 @@
 
 # TIME LINE
     13/05/2021  10h57 :  <TEAM-OF1> An alert was issue from our monitoring tool <SAVAGE version 1.2>
-                11h05 :  <TEAM-OF1> We checked is there was no physical problem on server infrastructure with TEAM <INF-01>
+                11h05 :  <TEAM-OF1> We checked is there was no physical problem on server  
+                infrastructure with TEAM <INF-01>
                 11h15 :  <TEAM-OF1> We check if all port was responding and we figure the firewall was blocking the request
                 11h20 :  <TEAM-OF1> We transfer the problem to the IT security team <PROX-102> to solve the problem
                 11h25 :  <PROX-102> Our new employee closed all port, full check up on port and restablishement of the  communication
@@ -14,12 +15,10 @@
 
 # ROOT CAUSE AND RESOLUTION
     - CAUSES
-                The issue was caused by a bad configuration made by a new employee 
-                on the firewall for getting answer on port all port.
+                The issue was caused by a bad configuration made by a new employee on the firewall for getting answer on port all port.
     
     - RESOLUTION
-                Restablishment the correct configuration. To do it, follow the process
-                 on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
+                Restablishment the correct configuration. To do it, follow the process on </FireWall/ConfigurePort_V5.doc>. And open all port written on the document.
 # CORRECTIVE AND PREVENTIVE ISSUE
     * Improve the formation of new employee with <CP05FORM-BaseFireWall>
     * Do not give full right on system without this formation
