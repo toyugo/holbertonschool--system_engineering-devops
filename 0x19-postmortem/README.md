@@ -16,8 +16,8 @@
         A new employee closed accidentally all port of the firewall.
     
     - RESOLUTION
-        Restablish config <conf-02>.  
-            Follow the process on document </FireWall/ConfigurePort_V5.doc> which contain all needed open port.  
+        Restablishment of config <conf-02>.  
+            To do it follow document </FireWall/ConfigurePort_V5.doc> which contain all needed open port.  
 # CORRECTIVE AND PREVENTIVE ISSUE
     * Improve the formation of new employee with <CP05FORM-BaseFireWall>
     * Do not give full right on system without this formation
