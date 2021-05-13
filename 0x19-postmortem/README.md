@@ -1,4 +1,4 @@
-![alt text](./Image/Client_IMG.png) <!-- .element height="50%" width="50%" -->
+![alt text](./Image/Client_IMG.png) <!-- .element height="100%" width="100%" -->
 # ISSUE SUMMARY
     Start   :   10:57 (GMT +2) 
     End     :   11:30 (GMT +2)
