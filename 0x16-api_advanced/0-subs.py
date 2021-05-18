@@ -1,7 +1,6 @@
 #!/usr/bin/python3
+"""Function to query"""
 import requests
-import json
-import sys
 
 
 def number_of_subscribers(subreddit):
