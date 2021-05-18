@@ -14,7 +14,7 @@ def top_ten(subreddit):
     resp = requests.get(url.format(subreddit), headers=headers,
                         allow_redirects=False)
     if resp.status_code != 200:
-        print('none')
+        print('None')
         return
     else:
         json_resp = resp.json()
