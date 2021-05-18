@@ -15,11 +15,11 @@ def top_ten(subreddit):
                         allow_redirects=False)
     if resp.status_code == 404:
         print('none')
-        return ()
+        return
     else:
         json_resp = resp.json()
         data_posts = resp.json()['data']['children']
         for data in data_posts:
             title = data['data']['title']
             print(title)
-    return ()
+    return
