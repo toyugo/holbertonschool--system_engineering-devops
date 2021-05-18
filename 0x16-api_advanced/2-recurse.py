@@ -10,7 +10,7 @@ def recurse(subreddit, hot_list=[], i=0):
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36\
                        (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
     }
-    url = "https://www.reddit.com/r/{}/hot.json?limit=10"
+    url = "https://www.reddit.com/r/{}/hot.json"
     resp = requests.get(url.format(subreddit), headers=headers,
                         allow_redirects=False)
     if resp.status_code != 200:
