@@ -14,8 +14,8 @@ def number_of_subscribers(subreddit):
     }
     url = "https://www.reddit.com/r/{}/about.json"
     resp = requests.get(url.format(subreddit), headers=headers)
-    if resp.status_code == 404:
-        return 0
+    if resp.status_code != 200:
+        return (0)
     else:
         json_resp = resp.json()['data']
         # json_resp = json.dumps(json_resp, indent=4, sort_keys=True)
