@@ -1,1 +1,6 @@
-exec { '/usr/bin/env sed -i "s/phpp/php/g" /var/www/html/wp-settings.php': }
+# Web stack
+exec { 'fix_wordpress':
+  command => 'sed -i "s/phpp/php/" /var/www/html/wp-settings.php; sudo service apache2 restart',
+  path    => ['/usr/bin', '/bin'],
+}
+
