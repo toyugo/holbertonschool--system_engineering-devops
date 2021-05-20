@@ -16,7 +16,7 @@
                 11h30 :  <TEAM-OF1>  Web site available, incident close.  
 # ROOT CAUSE AND RESOLUTION
     CAUSES
-    ----------
+    ------
         A new employee closed accidentally all port of the firewall.
     
     RESOLUTION
