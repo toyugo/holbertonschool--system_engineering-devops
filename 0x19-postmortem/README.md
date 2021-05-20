@@ -16,11 +16,11 @@
                 11h30 :  <TEAM-OF1>  Web site available, incident close.  
 # ROOT CAUSE AND RESOLUTION
     CAUSES
-    ---
+    ----------
         A new employee closed accidentally all port of the firewall.
     
     RESOLUTION
-    ---
+    ----------
         Restablishment of config <conf-02>.  
             To do it follow document </FireWall/ConfigurePort_V5.doc> which contain all needed open port.  
 # CORRECTIVE AND PREVENTIVE ISSUE
