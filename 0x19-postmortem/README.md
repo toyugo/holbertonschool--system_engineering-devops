@@ -6,14 +6,14 @@
     The root cause was a problem of the firewall configuration for information from server <INF-01> .
 
 # TIME LINE
-    DATE                  TEAM      DESCRIPTION
+    <DATE>            :  <TEAM>      <DESCRIPTION>
     --------------------------------------------------------------------------------------------------
-    13/05/2021  10h57 :  <TEAM-OF1> An alert was issued from our monitoring tool <SAVAGE version 1.2>.  
-                11h05 :  <TEAM-OF1> Physical check up on Infrastructure server <INF-01>.  
-                11h15 :  <TEAM-OF1> Port check up on server <EDG-01>, the firewall block all port.  
-                11h20 :  <TEAM-OF1> Transfer to the IT security team <PROX-102>.  
-                11h25 :  <PROX-102> Full port check up restablishement of the  communication.  
-                11h30  : <TEAM-OF1> Web site available, incident close.  
+    13/05/2021  10h57 :  <TEAM-OF1>  An alert was issued from our monitoring tool <SAVAGE version 1.2>.  
+                11h05 :  <TEAM-OF1>  Physical check up on Infrastructure server <INF-01>.  
+                11h15 :  <TEAM-OF1>  Port check up on server <EDG-01>, the firewall block all port.  
+                11h20 :  <TEAM-OF1>  Transfer to the IT security team <PROX-102>.  
+                11h25 :  <PROX-102>  Full port check up restablishement of the  communication.  
+                11h30 :  <TEAM-OF1>  Web site available, incident close.  
 # ROOT CAUSE AND RESOLUTION
     - CAUSES
         A new employee closed accidentally all port of the firewall.
