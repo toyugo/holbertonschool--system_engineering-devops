@@ -1,20 +1,4 @@
 <div class="panel-body">
-    <h2>Resources</h2>
-<p><strong>man or help</strong>:</p>
-
-<ul>
-<li><code>chmod</code></li>
-<li><code>sudo</code></li>
-<li><code>su</code></li>
-<li><code>chown</code></li>
-<li><code>chgrp</code></li>
-<li><code>id</code></li>
-<li><code>groups</code></li>
-<li><code>whoami</code></li>
-<li><code>adduser</code></li>
-<li><code>useradd</code></li>
-<li><code>addgroup</code></li>
-</ul>
 
 <h2>Learning Objectives</h2>
 
@@ -39,6 +23,23 @@
 <li>How to print real and effective user and group IDs</li>
 <li>How to print the groups a user is in</li>
 <li>How to print the effective userid</li>
+</ul>
+
+ <h2>Resources</h2>
+<p><strong>man or help</strong>:</p>
+
+<ul>
+<li><code>chmod</code></li>
+<li><code>sudo</code></li>
+<li><code>su</code></li>
+<li><code>chown</code></li>
+<li><code>chgrp</code></li>
+<li><code>id</code></li>
+<li><code>groups</code></li>
+<li><code>whoami</code></li>
+<li><code>adduser</code></li>
+<li><code>useradd</code></li>
+<li><code>addgroup</code></li>
 </ul>
 
 <h2>Requirements</h2>
